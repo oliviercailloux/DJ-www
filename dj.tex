@@ -1,0 +1,160 @@
+\RequirePackage[l2tabu, orthodox]{nag}
+\documentclass[french, english]{beamer}
+\input{preamble/packages}
+\input{preamble/redac}
+\input{preamble/math_basics}
+\input{preamble/math_mine}
+\input{preamble/draw}
+
+\title[Deliberated judgment]{\glspdffmtfull{DJ}: what, why, how?}
+\subject{Preference modeling}
+\keywords{Arguments}
+\author{Olivier Cailloux \inst{1}}
+\institute[LAMSADE]{\inst{1} LAMSADE, Université Paris-Dauphine}
+\date{\formatdate{7}{11}{2024}}
+
+\begin{document}
+\begin{frame}[plain]
+	\tikz[remember picture,overlay]{
+		\path (current page.south west) node[anchor=south west, inner sep=0] {
+			\includegraphics[height=8mm]{Dauphine-Noir.png}
+		};
+		\path (current page.south east) node[anchor=south east, inner sep=0] {
+			\includegraphics[height=1cm]{LAMSADE95.jpg}
+		};
+		\path (current page.south) ++ (0, 4em) node[anchor=south, inner sep=0] {
+			\scriptsize\textcolor{blue}{\url{https://github.com/oliviercailloux/DJ-www}}
+		};
+	}
+	\titlepage
+\end{frame}
+\addtocounter{framenumber}{-1}
+
+\begin{frame}
+	\frametitle{Outline}
+	\tableofcontents[hideallsubsections, sectionstyle=shaded/show]
+\end{frame}
+
+\AtBeginSection{
+	\begin{frame}
+		\frametitle{Outline}
+		\tableofcontents[currentsection, hideallsubsections]
+	\end{frame}
+}
+
+\glsunset{DJ}
+
+\section{What?}
+\begin{frame}
+	\frametitle{\glsfmtlong{DJ}}
+	\begin{itemize}
+		\item \emph{Someone}’s \gls{DJ} \emph{about an issue} facing a given set of \emph{arguments}: her judgment after considering the arguments
+		\item Example: your judgment about nuclear power after considering some arguments given by Greenpeace and EDF
+		\item Intuition: judgment may change after learning something
+		\item … but may change back after learning more!
+		\item Need systematic method to study \glspl{DJ}
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Deliberated preference}
+	\begin{itemize}
+		\item Someone’s deliberated preference about an issue facing arguments given possible courses of action (or attitudes): her relative positioning of the possibilities, after considering the arguments
+		\item Deliberated preference: relative positioning of possible judgments
+		\item Typically, represents how the person chooses
+		\item Example: whether you prefer nuclear power to solar power (… to coal power, …), after considering some arguments given by Greenpeace and EDF
+	\end{itemize}
+\end{frame}
+
+\section{Why?}
+\begin{frame}
+	\frametitle{Contrast with shallow preference}
+	\begin{itemize}
+		\item Economists study preferences
+		\item To model choice
+		\item Sometimes used normatively
+		\item People prefer this to that, therefore, we should orient society towards…
+	\end{itemize}
+  Similarity: the individual’s position (no a priori position on the quality of the arguments)
+\end{frame}
+
+\begin{frame}
+	\frametitle{Reasons for studying DJ}
+	\begin{itemize}
+		\item DPs might provide better normative grounding
+		\item Studying possibilities or hypothesis for society (Habermas like)
+		\item Epistemology: conviction VS ground-based belief…
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Why is it not trivial?}
+  “Just give her all the arguments”?
+	\begin{itemize}
+		\item Judgment may depend on ordering
+		\item Arguments are numerous, even infinite
+		\item Variants of phrasing: equivalent?
+		\item Reproducibility?
+		\item All this require theorizing
+		\item Such claims might be falsifiable
+		\item Amenable to empirical (possibly statistical) study
+	\end{itemize}
+\end{frame}
+
+\section{How?}
+\begin{frame}
+	\frametitle{Formal approach}
+	\begin{itemize}
+		\item Define deliberated preference
+		\item On the basis of observable reactions to arguments
+		\item Define concept of a theory of DPs
+		\item Define properties of theories: anonymity, falsifiability, determinacy…
+		\item Analyse axiomatically
+	\end{itemize}
+\end{frame}
+
+\begin{frame}[plain]
+	\addtocounter{framenumber}{-1}
+	\begin{center}
+		\huge
+		\textit{Thank you for your attention!}
+	\end{center}
+\end{frame}
+
+\end{document}
+
+\appendix
+\AtBeginSection{
+}
+
+\begin{frame}[allowframebreaks]
+	\frametitle{\refname}
+ 	\bibliography{zotero}
+\end{frame}
+
+\clearpage\pdfbookmark{License}{License}
+\begin{frame}[plain]
+	\frametitle{License}
+	This presentation, and the associated \LaTeX{} code, are published under the \href{https://opensource.org/licenses/MIT}{MIT license}. Feel free to reuse (parts of) the presentation, under condition that you cite the author.
+	
+	Credits are to be given to \hrefblue{https://www.lamsade.dauphine.fr/~ocailloux/}{Olivier Cailloux}, Université Paris-Dauphine.
+\end{frame}
+\addtocounter{framenumber}{-1}
+\end{document}
+
+\begin{frame}
+	\frametitle{Title}
+	\begin{block}{Block}
+		\begin{itemize}
+			\item Item
+		\end{itemize}
+	\end{block}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Title}
+	\begin{itemize}
+		\item Item
+	\end{itemize}
+\end{frame}
+
